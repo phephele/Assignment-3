@@ -1,0 +1,4 @@
+"0","x=anscombe$x1"
+"0","y=anscombe$y1"
+"0","plot(x, y)"
+"0","abline(lm(y1 ~ x1, data = anscombe))"

@@ -1,0 +1,38 @@
+---
+title: "Assignment 3_"
+author: "Sihle"
+date: "22 July 2016"
+output: github_document
+---
+## Hello Octocat
+I love Octocat. she's the coolest cat in town.
+![](https://dl.dropboxusercontent.com/u/11805474/painblogr/biostats/images/octocat.png)
+
+```{r quick look, echo=FALSE}
+data("anscombe")
+dim(anscombe)
+names(anscombe)
+head(anscombe, n=6)
+tail(anscombe, n=6)
+summary(anscombe)
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r, xy plot, echo=FALSE, fig.height=8, fig.width=8, fig.align='center', fig.path='./figures/', fig.ext='svg'}
+data("anscombe")
+x=anscombe$x1
+y=anscombe$y1
+plot(x, y)
+abline(lm(y1 ~ x1, data = anscombe))
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

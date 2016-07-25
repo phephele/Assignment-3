@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle: \"Assignment 3_\"\nauthor: \"Sihle\"\ndate: \"22 July 2016\"\noutput: github_document\n---\n## Hello Octocat\nI love Octocat. she's the coolest cat in town.\n![](https://dl.dropboxusercontent.com/u/11805474/painblogr/biostats/images/octocat.png)\n\n```{r quick look, echo=FALSE}\ndata(\"anscombe\")\ndim(anscombe)\nnames(anscombe)\nhead(anscombe, n=6)\ntail(anscombe, n=6)\nsummary(anscombe)\nknitr::opts_chunk$set(echo = TRUE)\n```\n\n\n```{r, xy plot, echo=FALSE, fig.height=8, fig.width=8, fig.align='center', fig.path='./figures/', fig.ext='svg'}\ndata(\"anscombe\")\nx=anscombe$x1\ny=anscombe$y1\nplot(x, y)\nabline(lm(y1 ~ x1, data = anscombe))\n```\n\n## Including Plots\n\nYou can also embed plots, for example:\n\n```{r pressure, echo=FALSE}\nplot(pressure)\n```\n\nNote that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.\n",
+    "created" : 1469185551138.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4022774925",
+    "id" : "314051EF",
+    "lastKnownWriteTime" : 1469442835,
+    "last_content_update" : 1469442835950,
+    "path" : "C:/Users/Wits-User/Desktop/Assignment 3/README.Rmd",
+    "project_path" : "README.Rmd",
+    "properties" : {
+        "chunk_rendered_width" : "650",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
